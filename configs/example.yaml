@@ -1,0 +1,16 @@
+task: summarization
+seed: 42
+
+dataset:
+  path: configs/example.jsonl
+
+provider:
+  type: dummy
+  params:
+    prefix: "PRED"
+
+metrics: ["accuracy", "rougeL"]
+
+report:
+  type: html
+  # baseline_run: "results/baseline"   # optional
