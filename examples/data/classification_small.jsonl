@@ -1,0 +1,4 @@
+{"input": "Dogs are common household pets.", "reference": "animal"}
+{"input": "The stock market fell by two percent today.", "reference": "finance"}
+{"input": "A new species of whale was discovered.", "reference": "animal"}
+{"input": "Central banks raised interest rates.", "reference": "finance"}

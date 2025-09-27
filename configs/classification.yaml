@@ -1,0 +1,13 @@
+task: classification
+dataset:
+  path: examples/data/classification_small.jsonl
+provider:
+  type: dummy
+  params:
+    strategy: head-words
+    max_tokens: 5
+metrics: [accuracy]
+report:
+  type: html
+  baseline_run: null
+seed: 42

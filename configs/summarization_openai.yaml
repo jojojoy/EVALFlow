@@ -1,0 +1,14 @@
+task: summarization
+dataset:
+  path: examples/data/summarization_small.jsonl
+provider:
+  type: openai
+  params:
+    model: gpt-4o-mini
+    temperature: 0.0
+    max_tokens: 128
+metrics: [rougeL, bleu]
+report:
+  type: html
+  baseline_run: null
+seed: 123
