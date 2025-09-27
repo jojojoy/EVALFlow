@@ -1,0 +1,3 @@
+{"input": "hello world", "reference": "hello world"}
+{"input": "large language models", "reference": "language models are large"}
+{"input": "abc def", "reference": "xyz"}
