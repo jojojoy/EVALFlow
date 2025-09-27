@@ -1,0 +1,13 @@
+task: summarization
+dataset:
+  path: examples/data/summarization_small.jsonl
+provider:
+  type: dummy
+  params:
+    strategy: head-words
+    max_tokens: 30
+metrics: [rougeL]
+report:
+  type: html
+  baseline_run: null
+seed: 123
