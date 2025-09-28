@@ -9,7 +9,7 @@ description = "A lightweight, reproducible evaluation pipeline for LLMs with gol
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{name="Joy Ji"}]
-license = {text = "MIT"}
+license = "MIT"
 dependencies = [
   "pyyaml>=6.0.1",
   "tqdm>=4.66.0",
@@ -19,3 +19,9 @@ dependencies = [
 
 [project.scripts]
 evalflow = "evalflow.cli:main"
+
+#[tool.setuptools.packages.find]
+#include = ["evalflow*"]
+#exclude = ["tests*", "examples*", "configs*"]
+[tool.setuptools]
+packages = ["evalflow"]
